@@ -1,18 +1,18 @@
 #from turtle import *
 import turtle
 print("----- Draw A Cute Cat Student Name: Zhou Junyao UID:3036311651 ----")
-# Set up the screen
+
+# background
 screen = turtle.Screen()
 screen.title("Phone Drawing")
-screen.bgcolor("white")
+screen.bgcolor("Light yellow")
 
-# Create a turtle object
 phone = turtle.Turtle()
 phone.speed(0)
 phone.color("black")
 phone.width(3)
 
-# Draw the phone
+# draw the outside of the phone
 phone.penup()
 phone.goto(-100, 200)
 phone.pendown()
@@ -25,7 +25,7 @@ for _ in range(2):
     phone.right(90)
 phone.end_fill()
 
-# Draw the screen
+# draw the screen
 phone.penup()
 phone.goto(-80, 180)
 phone.pendown()
@@ -38,8 +38,7 @@ for _ in range(2):
     phone.right(90)
 phone.end_fill()
 
-
-# Hide the turtle and display the drawing
+# ending
 phone.hideturtle()
 screen.mainloop()
 
